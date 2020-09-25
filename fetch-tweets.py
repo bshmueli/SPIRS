@@ -1,20 +1,17 @@
-
 from credentials import CONSUMER_KEY, CONSUMER_SECRET
 import tweepy, csv
 from time import sleep
 
-# tweet_types = ['cue_id', 'sar_id', 'obl_id', 'eli_id']
-
 def all_rows(anonfile):
   reader = csv.DictReader(open(anonfile, 'r'), delimiter=',')
-  return [row for row in reader][0:1000]
+  return [row for row in reader]
 
 def fetch_tweets(rows):
   tweet_ids = [[row[key] for key in list(row.keys())[1:]] for row in rows]
   tweet_ids = [tweet_id for sublist in tweet_ids for tweet_id in sublist if tweet_id]
   return {tweet.id_str:tweet for tweet in fetch_ids(tweet_ids) if tweet.id_str != ''}
 
-def fetch_ids(ids): # returned fetched tweet ids
+def fetch_ids(ids):
   id_lists = [ids[x:x+100] for x in range(0, len(ids), 100)]
   tweets = []
   for idx, id_list in enumerate(id_lists):
@@ -24,9 +21,9 @@ def fetch_ids(ids): # returned fetched tweet ids
   return tweets
 
 def deanon(de_anon_file, rows, tweets):
-  with open(de_anon_file, 'w') as f:
+  with open(de_anon_file, 'w', newline='\n', encoding='utf-8') as f:
     fieldnames = list(rows[0].keys())
-    tweet_types = fieldnames[1:]
+    tweet_types = [key for key in fieldnames[1:] if '_id' in key]
     fieldnames.extend([key.replace('_id','_text') for key in tweet_types])
     dict_writer = csv.DictWriter(f, quoting=csv.QUOTE_ALL, fieldnames=fieldnames)
     dict_writer.writeheader()
@@ -46,7 +43,7 @@ if __name__ == "__main__":
     CONSUMER_KEY
     CONSUMER_SECRET
   except:
-    print('Edit the script to add your Twitter API credentials in the first two lines (CONSUMER_KEY and CONSUMER_SECRET)')
+    print('Edit credentials.py to add your Twitter API credentials in the first two lines (CONSUMER_KEY and CONSUMER_SECRET)')
     print('See here for more information on getting API credentials: https://developer.twitter.com/en/apps')
     exit(1)
   auth = tweepy.AppAuthHandler(CONSUMER_KEY , CONSUMER_SECRET)
@@ -59,4 +56,3 @@ if __name__ == "__main__":
   convert('SPIRS-non-sarcastic-ids.csv', 'SPIRS-non-sarcastic.csv')
   convert('SPIRS-sarcastic-ids.csv', 'SPIRS-sarcastic.csv')
   print('That\'s it! Hope you enjoyed the ride :)')
-
