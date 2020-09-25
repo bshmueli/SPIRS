@@ -14,7 +14,7 @@ To fetch the tweet texts, follow these steps:
   - Add your Twitter API credentials by editing credentials.py
   - Run the script:
   
-    `python3 fetch_tweets.py`
+    `python3 fetch-tweets.py`
 
 The script will fetch the texts and create two new files, one for sarcastic and the other for non-sarcastic tweets.
 
