@@ -22,9 +22,9 @@ To fetch the tweet texts, follow these steps:
 
 The script will fetch the texts and create two new files, one for sarcastic and the other for non-sarcastic tweets.
 
-## Reactive Supervision
+## Citation
 
-The Reactive Supervision paper should be cited using the following BibTex entry:
+Kindly cite the paper using the following BibTex entry:
 
 ```
 @InProceedings{
