@@ -27,13 +27,13 @@ The script will fetch the texts and create two new files, one for sarcastic and 
 Kindly cite the paper using the following BibTex entry:
 
 ```
-@InProceedings{
-    shmueli:2020:reactive-supervision, 
+@inproceedings{
+    shmueli:reactive-supervision, 
     title={Reactive Supervision: A New Method for Collecting Sarcasm Data}, 
     author={Shmueli, Boaz and Ku, Lun-Wei and Ray, Soumya}, 
     booktitle = "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing", 
-    year = "2020", publisher = 
-    "Association for Computational Linguistics"
+    year = "2020", 
+    publisher = "Association for Computational Linguistics"
 }
 ```
 
