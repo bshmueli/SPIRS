@@ -1,13 +1,14 @@
 # Reactive Supervision and SPIRS
 
-Reactive upervision is a new method for capturing labeled data from social media. 
+Reactive upervision is a new method for capturing labeled data from social media. SPIRS is a sarcasm dataset collected using reactive supervision.
 The reactive supervision paper is available here: 
 
-SPIRS is a sarcasm dataset collected using reactive supervision. You can download the dataset here.
-This repository includes the following data files. To comply with Twitter's privacy policy, the files include only the tweet IDs.
+ Use this repository to download SPIRS. The repository includes the following data files:
 
-  - SPIRS-sarcastic-ids.csv
-  - SPIRS-non-sarcastic-ids.csv
+  * SPIRS-sarcastic-ids.csv
+  * SPIRS-non-sarcastic-ids.csv
+
+To comply with Twitter's privacy policy, the files include only the tweet IDs.
 
 To fetch the tweet texts, follow these steps:
 
