@@ -7,9 +7,14 @@ This directory includes the following data files. To comply with Twitter's priva
 
 To fetch the tweet texts, follow these steps:
 
+  - Install the latest version of Tweepy:
+  
+    `pip3 install tweepy`
   - Rename credentials-example.py to credentials.py
   - Add your Twitter API credentials by editing credentials.py
-  - Run `python3 fetch_texts.py`
+  - Run the script:
+  
+    `python3 fetch_tweets.py`
 
 The script will fetch the texts and create two new files, one for sarcastic and the other for non-sarcastic tweets.
 
