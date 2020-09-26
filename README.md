@@ -8,12 +8,10 @@ The reactive supervision paper will be available soon.
   * `SPIRS-sarcastic-ids.csv` the sarcastic tweets (15000 "positive" samples)
   * `SPIRS-non-sarcastic-ids.csv` the non-sarcastic tweets (15000 "negative" samples)
   
-To comply with Twitter's privacy policy, the dataset files include only the tweet IDs.
-
 Addition fields for each sarcastic tweet include the sarcasm perspective (intended/perceived), author sequence, and context tweet IDs (cue, oblivious, and eliciting tweets).
 Additional information is available in the reactive supervision paper.
 
-To fetch the tweet texts, follow these steps:
+To comply with Twitter's privacy policy, the dataset files include only the tweet IDs. To fetch the tweet texts, follow these steps:
 
   * Install the latest version of Tweepy:
   
