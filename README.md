@@ -21,7 +21,10 @@ To fetch the tweet texts, follow these steps:
   
     `python3 fetch-tweets.py`
 
-The script will fetch the texts and create two new files, one for sarcastic and the other for non-sarcastic tweets.
+The script will fetch the texts and create two new files, one for sarcastic and the other for non-sarcastic tweets:
+
+  * `SPIRS-sarcastic.csv`
+  * `SPIRS-non-sarcastic.csv`
 
 ## Citation
 
