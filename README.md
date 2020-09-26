@@ -5,10 +5,11 @@ The reactive supervision paper will be available soon.
 
  Use this repository to download SPIRS. The repository includes the following data files:
 
-  * `SPIRS-sarcastic-ids.csv`
-  * `SPIRS-non-sarcastic-ids.csv`
-
+  * `SPIRS-sarcastic-ids.csv` - sarcastic tweets ("positive" samples)
+  * `SPIRS-non-sarcastic-ids.csv` - non-sarcastic tweets ("negative" samples)
+  
 To comply with Twitter's privacy policy, the dataset files include only the tweet IDs.
+Each file includes the tweet IDs of 15000 tweets. Addition fields in each record include the author sequence, sarcasm perspective, and tweet IDs for the cue, oblivious, and eliciting tweets. More information is available in the reactive supervision paper.
 
 To fetch the tweet texts, follow these steps:
 
