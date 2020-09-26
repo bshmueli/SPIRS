@@ -5,8 +5,8 @@ The reactive supervision paper will be available soon.
 
  Use this repository to download SPIRS. The repository includes the following data files:
 
-  * SPIRS-sarcastic-ids.csv
-  * SPIRS-non-sarcastic-ids.csv
+  * `SPIRS-sarcastic-ids.csv`
+  * `SPIRS-non-sarcastic-ids.csv`
 
 To comply with Twitter's privacy policy, the dataset files include only the tweet IDs.
 
@@ -15,8 +15,8 @@ To fetch the tweet texts, follow these steps:
   * Install the latest version of Tweepy:
   
     `pip3 install tweepy`
-  * Rename credentials-example.py to credentials.py
-  * Add your Twitter API credentials by editing credentials.py
+  * Rename `credentials-example.py` to `credentials.py`
+  * Add your Twitter API credentials by editing `credentials.py`
   * Run the script:
   
     `python3 fetch-tweets.py`
