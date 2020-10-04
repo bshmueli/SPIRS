@@ -1,9 +1,13 @@
-# Reactive Supervision and SPIRS
+# SPIRS Sarcasm Dataset
 
-Reactive upervision is a new method for capturing labeled data from social media. SPIRS is a sarcasm dataset collected using reactive supervision.
-The reactive supervision paper will be available soon. 
+SPIRS is a unique dataset of sarcastic tweets. SPIRS was collected using a new data capturing method, reactive supervision. 
+Reactive supervision has many advantages, including the collection of both _intended sarcasm_ and _perceived sarcasm_ texts. 
 
- Use this repository to download SPIRS. The repository includes the following data files:
+Among many new features, the sarcastic tweets include a label for the sarcasm perspective: intended sarcasm / perceived sarcasm. 
+
+To find out more about SPIRS and reactive supervision, check out the [reactive supervision paper](https://arxiv.org/abs/2009.13080), or read the [Medium article](https://towardsdatascience.com/the-magic-of-reactive-supervision-3fc83cdb1ca4).
+
+Use this repository to download SPIRS. The repository includes the following data files:
 
   * `SPIRS-sarcastic-ids.csv` the sarcastic tweet IDs (15000 "positive" samples)
   * `SPIRS-non-sarcastic-ids.csv` the non-sarcastic tweet IDs (15000 "negative" samples)
