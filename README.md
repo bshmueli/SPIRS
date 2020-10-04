@@ -1,9 +1,9 @@
 # SPIRS Sarcasm Dataset
 
-SPIRS is a unique dataset of sarcastic tweets. SPIRS was collected using a new data capturing method, reactive supervision. 
-Reactive supervision has many advantages, including the collection of both _intended sarcasm_ and _perceived sarcasm_ texts. 
+SPIRS is a unique dataset of 15000 sarcastic tweets. SPIRS was collected using **reactive supervision**, a new data capturing method. 
+Reactive supervision allows the collection of both _intended sarcasm_ and _perceived sarcasm_ texts. 
 
-Among many new features, the sarcastic tweets include a label for the sarcasm perspective: intended sarcasm / perceived sarcasm. 
+**SPIRS** stands for **S**arcasm, **P**erceived and **I**ntended, by **R**eactive **S**upervision :)
 
 To find out more about SPIRS and reactive supervision, check out the [reactive supervision paper](https://arxiv.org/abs/2009.13080), or read the [Medium article](https://towardsdatascience.com/the-magic-of-reactive-supervision-3fc83cdb1ca4).
 
