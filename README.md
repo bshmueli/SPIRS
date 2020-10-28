@@ -1,6 +1,6 @@
 # SPIRS Sarcasm Dataset
 
-SPIRS is a unique dataset of 15000 sarcastic tweets. SPIRS was collected using **reactive supervision**, a new data capturing method. 
+SPIRS is a unique dataset of 15,000 sarcastic tweets. SPIRS was collected using **reactive supervision**, a new data capturing method. 
 Reactive supervision allows the collection of both _intended sarcasm_ and _perceived sarcasm_ texts. 
 
 **SPIRS** stands for **S**arcasm, **P**erceived and **I**ntended, by **R**eactive **S**upervision :)
@@ -9,18 +9,18 @@ To find out more about SPIRS and reactive supervision, check out the [reactive s
 
 Use this repository to download SPIRS. The repository includes the following data files:
 
-  * `SPIRS-sarcastic-ids.csv` the sarcastic tweet IDs (15000 "positive" samples)
-  * `SPIRS-non-sarcastic-ids.csv` the non-sarcastic tweet IDs (15000 "negative" samples)
+  * `SPIRS-sarcastic-ids.csv` the sarcastic tweet IDs (15,000 "positive" samples)
+  * `SPIRS-non-sarcastic-ids.csv` the non-sarcastic tweet IDs (15,000 "negative" samples)
   
-Addition fields for each sarcastic tweet include the sarcasm perspective (intended/perceived), author sequence, and contextual tweet IDs (cue, oblivious, and eliciting tweets).
-Additional information is available in the reactive supervision paper.
+Additional fields for each sarcastic tweet include the sarcasm perspective (intended/perceived), author sequence, and contextual tweet IDs (cue, oblivious, and eliciting tweets).
+More information is available in the reactive supervision paper.
 
 To comply with Twitter's privacy policy, the dataset files include only the tweet IDs. To fetch the tweet texts, follow these steps:
 
   * Install the latest version of Tweepy:
   
     `pip3 install tweepy`
-  * Rename `credentials-example.py` to `credentials.py`
+  * Rename our `credentials-example.py` to `credentials.py`
   * Add your Twitter API credentials by editing `credentials.py`
   * Run the script:
   
