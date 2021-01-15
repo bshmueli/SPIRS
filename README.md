@@ -5,7 +5,7 @@ Reactive supervision allows the collection of both _intended sarcasm_ and _perce
 
 **SPIRS** stands for **S**arcasm, **P**erceived and **I**ntended, by **R**eactive **S**upervision :)
 
-To find out more about SPIRS and reactive supervision, check out the [reactive supervision paper](https://arxiv.org/abs/2009.13080), or read the [Medium article](https://towardsdatascience.com/the-magic-of-reactive-supervision-3fc83cdb1ca4).
+To find out more about SPIRS and reactive supervision, check out the [reactive supervision paper](https://arxiv.org/abs/2009.13080), or read the [Medium article](https://towardsdatascience.com/the-magic-of-reactive-supervision-3fc83cdb1ca4). Or watch this short, 7-minute [YouTube video about reactive supervision](https://www.youtube.com/watch?v=Wx6S-KdZ1nM).
 
 Use this repository to download SPIRS. The repository includes the following data files:
 
